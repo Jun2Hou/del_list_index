@@ -15,7 +15,7 @@ class LineDel:
         res = []
         # 所有行数索引号
         all_data = list(range(0, l_n))
-        # 将数据切割成 l_n / n_g 块
+        # 将数据切割成 l_n / n_g 块, n_g: 每块数据区间的长度
         n_g = int(l_n * 0.48 / 10000 * col_p) - 1
         # 所有数据块的集合
         tar_n_g_ls = [all_data[i: i + int(l_n / n_g)] for i in range(0, l_n, int(l_n / n_g))]
